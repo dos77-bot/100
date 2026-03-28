@@ -8,3 +8,5 @@ Original prompt: Build a classic Snake game in this repo.
 - Verification completed:
   - `node` assertions passed for movement, growth, wall collision, self collision, and food placement.
   - `xcodebuild -list -project '/Users/dos/Downloads/100% Security/SnakeHost/100%/100%.xcodeproj'` completed successfully from the moved path.
+- Repaired the runtime mismatch after the path move: `Script.js` now drives the real `Main.html` host UI through `SnakeGame.js`, exposes `show`, `render_game_to_text`, and `advanceTime`, and keeps `index.html` aligned for simple browser serving.
+- Re-verified the pure logic with local Node assertions after the UI wiring fix.
