@@ -1,0 +1,57 @@
+I'd be happy to help with PowerShell! However, "pswh" isn't clear to me. Did you mean one of these?
+
+- **psw**: PowerShell script template
+- **pwsh**: PowerShell Core syntax
+- **help**: PowerShell help command
+
+Could you clarify what you'd like? For example:
+- A basic PowerShell script template?
+- A specific PowerShell command or function?
+- Something else?
+param(
+    [ValidateSet('psw','pwsh','help')]
+    [string]$Type = 'psw'
+)
+
+switch ($Type) {
+    'psw' {
+        @'
+# Basic PowerShell script template
+param(
+    [string]$Name = 'User'
+)
+
+function Main {
+    param([string]$Name)
+    Write-Output "Hello, $Name!"
+}
+
+Main -Name $Name
+'@
+    }
+    'pwsh' {
+        @'
+#!/usr/bin/env pwsh
+# PowerShell Core example
+param(
+    [string]$Path = '.'
+)
+
+Get-ChildItem -Path $Path -File | ForEach-Object {
+    [PSCustomObject]@{
+        Name = $_.Name
+        FullName = $_.FullName
+        Length = $_.Length
+    }
+}
+'@
+    }
+    'help' {
+        @'
+Usage:
+    .\script.ps1 -Type psw    # emit a basic .ps1 template
+    .\script.ps1 -Type pwsh   # emit a pwsh example
+    .\script.ps1 -Type help   # show this help
+'@
+    }
+} | Write-Host

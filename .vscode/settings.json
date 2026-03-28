@@ -1,0 +1,11 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editor.chatDebug": true,
+        "workbench.editor.chatSession": true,
+        "workbench.editors.gettingStartedInput": true,
+        "workbench.input.interactive": true,
+        "pdf.preview": true,
+        "chatgpt.conversationEditor": true
+    }
+}

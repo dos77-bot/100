@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+:root {
+    color-scheme: light dark;
+    --spacing: 20px;
+    --board-size: min(78vmin, 420px);
+    --panel-border: rgba(128, 128, 128, 0.35);
+    --panel-fill: rgba(128, 128, 128, 0.14);
+    --cell-fill: rgba(128, 128, 128, 0.18);
+    --food-fill: #d64545;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--spacing);
+    margin: 0;
+    min-height: 100%;
+    padding: var(--spacing);
+    font: -apple-system-body;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 10px 14px;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--panel-fill);
+    font: inherit;
+    cursor: pointer;
+}
+
+.app-shell {
+    width: min(100%, 560px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+}
+
+h1 {
+    margin: 0;
+    font: -apple-system-headline;
+}
+
+.game-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.subtitle,
+.platform-note,
+.game-help {
+    opacity: 0.75;
+}
+
+.scoreboard,
+.game-actions,
+.control-row {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 14px;
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    background: var(--panel-fill);
+}
+
+.score-card span {
+    font-size: 0.9em;
+    opacity: 0.72;
+}
+
+.score-card strong {
+    font-size: 1.2em;
+}
+
+.board-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    --columns: 16;
+    width: var(--board-size);
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 2px;
+    padding: 2px;
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    background: var(--panel-fill);
+    touch-action: none;
+}
+
+.board-cell {
+    border-radius: 4px;
+    background: var(--cell-fill);
+}
+
+.board-cell.snake {
+    background: currentColor;
+    opacity: 0.7;
+}
+
+.board-cell.head {
+    opacity: 1;
+}
+
+.board-cell.food {
+    background: var(--food-fill);
+    opacity: 1;
+}
+
+.touch-controls {
+    display: none;
+    width: 100%;
+    gap: 10px;
+}
+
+@media (max-width: 720px), (pointer: coarse) {
+    .touch-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+    }
+
+    .app-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .board {
+        width: min(86vw, 420px);
+    }
+}

@@ -1,0 +1,211 @@
+{
+  "colors" : [
+    {
+      "display-gamut" : "sRGB",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "universal"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "universal"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "idiom" : "iphone"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "iphone"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "iphone"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "idiom" : "iphone"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "iphone"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "iphone"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "ipad"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "ipad"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "ipad"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "idiom" : "vision"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "idiom" : "vision"
+    },
+    {
+      "idiom" : "watch"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "idiom" : "tv"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "tv"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
