@@ -30,3 +30,4 @@ and body so the task can use them directly.
 ```
 
 > Note: this prompt is **personal‑project scoped** and intended for quick reproduction of HTTP problems.
+'/usr/local/bin/python3' -i /path/to/your_script.py

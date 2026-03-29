@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Snake</title>
+    <link rel="stylesheet" href="./Style.css">
+    <script src="./SnakeGame.js" defer></script>
+    <script src="./Script.js" defer></script>
+</head>
+<body>
+    <main class="app-shell">
+        <img class="app-icon" src="./Icon.png" width="64" height="64" alt="100% Icon">
+        <section class="game-copy" aria-label="Game introduction">
+            <h1>Snake</h1>
+            <p class="subtitle">Classic grid movement with a minimal host app shell.</p>
+            <p class="platform-note" data-platform>Running in the host app.</p>
+        </section>
+        <section class="scoreboard" aria-label="Scoreboard">
+            <div class="score-card">
+                <span>Score</span>
+                <strong data-score>0</strong>
+            </div>
+            <div class="score-card">
+                <span>Status</span>
+                <strong data-status>Ready</strong>
+            </div>
+        </section>
+        <div class="game-actions">
+            <button type="button" data-toggle-play>Start</button>
+            <button type="button" data-restart>Restart</button>
+        </div>
+        <div class="board-wrapper">
+            <div class="board" data-board role="grid" aria-label="Snake game board"></div>
+        </div>
+        <p class="game-help">Arrow keys or WASD move. Space pauses. R restarts the run.</p>
+        <div class="touch-controls" aria-label="On-screen controls">
+            <div class="control-row">
+                <button type="button" data-direction="up">Up</button>
+            </div>
+            <div class="control-row">
+                <button type="button" data-direction="left">Left</button>
+                <button type="button" data-toggle-play>Pause</button>
+                <button type="button" data-direction="right">Right</button>
+            </div>
+            <div class="control-row">
+                <button type="button" data-direction="down">Down</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
